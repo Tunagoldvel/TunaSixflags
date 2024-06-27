@@ -2,14 +2,17 @@ package com.SixFlagsEvents;
 
 import com.Utills.Element;
 import com.pages.BasePage;
-import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Listeners;
 
 @Listeners(com.Utills.Listener.class)
 public class CartItems  extends BasePage {
 
-     public static void MOFilter() throws Throwable {
+    public CartItems() {
+        super(driver);
+    }
+
+    public static void MOFilter() throws Throwable {
         Thread.sleep(500);
         WebElement mobOrder = Element.Ele("XPATH",
                 "//android.widget.TextView[@text='Offers Mobile Ordering']/following-sibling::android.view.View[1]");

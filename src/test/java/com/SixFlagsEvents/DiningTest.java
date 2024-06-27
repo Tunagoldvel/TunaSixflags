@@ -12,6 +12,10 @@ import org.openqa.selenium.interactions.Actions;
 public class DiningTest extends BasePage {
 
 
+    public DiningTest() {
+        super(driver);
+    }
+
     public static void selectDining() throws Throwable {
         scrollRatio(ScrollDirection.DOWN, 0.5);
         WebElement diningTab = Element.waitEle("XPATH", Element.diningTab);

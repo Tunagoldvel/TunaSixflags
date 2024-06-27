@@ -3,7 +3,6 @@ package com.SixFlagsEvents;
 import com.Utills.DriverSetUp;
 import com.Utills.Element;
 import com.pages.BasePage;
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AndroidBy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -13,6 +12,7 @@ public class AddPassTest extends BasePage {
 
     public AddPassTest() {
 
+        super(driver);
     }
     @AndroidBy(xpath = "//android.view.View[@resource-id='auto_Passes']")
     public static WebElement passes;

@@ -1,6 +1,7 @@
 package com.pages;
 
 import com.Utills.DriverSetUp;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -47,6 +48,10 @@ public class Passes extends BasePage {
     // @iOSFindBy(xpath = )
     public WebElement close;
 
+    public Passes(AppiumDriver driver) {
+
+        super(driver);
+    }
 
 
     public WebElement getPasses() {

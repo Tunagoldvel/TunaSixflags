@@ -20,8 +20,8 @@ import java.time.Duration;
 import java.util.Collections;
 
 public class BasePage extends DriverSetUp {
-public BasePage() {
-    PageFactory.initElements(driver, this);
+public BasePage(AppiumDriver driver) {
+    PageFactory.initElements(BasePage.driver, this);
 }
 
     static AppiumDriver driver = DriverSetUp.getDriver();

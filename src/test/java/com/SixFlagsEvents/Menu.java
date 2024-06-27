@@ -3,12 +3,14 @@ package com.SixFlagsEvents;
 
 import com.Utills.Element;
 import com.pages.BasePage;
-import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
 
 public class Menu extends BasePage {
 
 
+    public Menu() {
+        super(driver);
+    }
 
     public static void increase(int count) {
         for (int i = 0; i < count; i++) {
